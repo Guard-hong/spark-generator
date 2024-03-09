@@ -1,12 +1,21 @@
 package com.hcj;
 
-/**
- * @Author:HCJ
- * @DateTime:2024/3/9
- * @Description:
- **/
+import com.hcj.cli.CommandExecutor;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+//        args = new String[]{"generate", "-l", "-a", "-o"};
+//        args = new String[]{"config"};
+//        args = new String[]{"list"};
+        args = new String[]{"--help"};
+        CommandExecutor commandExecutor = new CommandExecutor();
+        commandExecutor.doExecute(args);
     }
+
+
 }
