@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hcj</groupId>
-    <artifactId>spark-generator-basic</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>${basePackage}</groupId>
+    <artifactId>${name}</artifactId>
+    <version>${version}</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -52,12 +52,6 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.hcj</groupId>
-            <artifactId>spark-generator-maker</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -72,7 +66,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.hcj.maker.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
+                            <mainClass>${basePackage}.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>
