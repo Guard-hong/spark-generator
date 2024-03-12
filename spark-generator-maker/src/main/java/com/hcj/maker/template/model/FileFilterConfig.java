@@ -20,11 +20,9 @@ public class FileFilterConfig {
      */
     private String rule;
 
-
     /**
      * 过滤值
      */
     private String value;
-
 
 }
