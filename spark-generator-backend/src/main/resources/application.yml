@@ -1,10 +1,10 @@
 # 公共配置文件
 spring:
   application:
-    name: spark-generator-web-backEnd
+    name: spark-generator-web-backend
   # 默认 dev 环境
   profiles:
-    active: local
+    active: dev
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -43,7 +43,7 @@ spring:
       max-request-size: 100MB
 server:
   address: 0.0.0.0
-  port: 29999
+  port: 8120
   servlet:
     context-path: /api
     # cookie 30 天过期
