@@ -1,4 +1,4 @@
-package com.azhang.acm;
+package com.hcj.acm;
 
 import java.util.Scanner;
 
